@@ -1,0 +1,46 @@
+%STYLE DEFINE BY CRISTIAN RIVEROS
+
+\usepackage{fullpage}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsthm,amssymb,amsfonts,mathrsfs,latexsym,stmaryrd}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{textpos}
+
+\newcommand{\nombreinsert}{}
+\newcommand{\nombre}[1]{\renewcommand{\nombreinsert}{#1}}
+
+\newcommand{\numtareainsert}{}
+\newcommand{\numtarea}[1]{\renewcommand{\numtareainsert}{#1}}
+
+\newenvironment{pregunta}[1]
+{
+	\pagebreak
+	\setcounter{page}{1}
+
+	\begin{textblock}{15}(-1.5,-1)
+		{\Large NOMBRE: \;\; \nombreinsert}
+	\end{textblock}
+
+
+	\includegraphics[width=2cm]{uc.png}
+	\vspace*{-1.9cm}
+
+	\hspace*{2.1cm}
+	\begin{tabular}{l}
+		\sc Pontificia Universidad Católica de Chile \\
+		\sc Escuela de Ingeniería \\
+		%\vspace{15\baselineskip}\mbox{}
+		%\vspace{-3mm}\mbox{}
+	\end{tabular}
+	\bigskip
+
+	\vspace*{5mm}
+	\begin{center}
+		{\large IIC2783 --- Laboratorio de Sistemas Digitales --- 2' 2018} \\
+		\vspace{3mm}
+		{\LARGE \bf Experiencia \numtareainsert \ } \\
+		\vspace{2mm}
+	\end{center}
+}{}
