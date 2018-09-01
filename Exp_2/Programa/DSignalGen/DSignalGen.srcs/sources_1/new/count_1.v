@@ -26,6 +26,8 @@ module count_1(
     );
     reg[255:0] count = 0;  //Variable Auxiliar que lleva la cuenta
     always @(posedge clk_in)
+        begin
         count <= (count == 255)? 0: count + 1;  // Siempre que clk_in este en el flanco de subida se sube la cuanta hasta 255, luego reinicia la cuenta
+        end
     assign count_out = count;  // Asigna el valor del contador a la variable de salida
 endmodule
