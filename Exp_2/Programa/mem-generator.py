@@ -22,6 +22,6 @@ print(sin_window)
 #escritura del archivo para copiar y pegar
 with open("mem.txt","w") as f:
     for i in range(256):
-        f.write("8b'{:08b}: signal = 24b'{:08b}{:08b}{:08b}\n".format(
+        f.write("8b'{:08b}: signal = 24b'{:08b}{:08b}{:08b};\n".format(
             i, triangular_window[i], square_window[i], sin_window[i]))
 
