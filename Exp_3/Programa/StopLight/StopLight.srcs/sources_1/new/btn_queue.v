@@ -18,8 +18,7 @@
 // Additional Comments: *CONVENCION DE ARREGLOS: [LARGO - 1:0]*
 //
 //////////////////////////////////////////////////////////////////////////////////
-`include "debouncer.v"
-`include "queue_count.v"
+
 
 module btn_queue(
     input btn1,

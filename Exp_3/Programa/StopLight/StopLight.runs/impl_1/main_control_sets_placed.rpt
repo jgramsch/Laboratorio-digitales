@@ -1,0 +1,84 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu Sep 20 15:59:14 2018
+| Host         : Ceres running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    15 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            1 |
+|      4 |            1 |
+|      8 |            2 |
+|     12 |            1 |
+|     14 |            2 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              94 |           21 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             204 |           42 |
+| Yes          | No                    | No                     |              32 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              50 |            7 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+-----------------+-----------------------------------------+------------------+----------------+
+|         Clock Signal        |  Enable Signal  |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-----------------------------+-----------------+-----------------------------------------+------------------+----------------+
+|  semaforo/Q[4]              |                 |                                         |                1 |              2 |
+|  semaforo/Q[1]              |                 |                                         |                2 |              4 |
+|  queue/my_btn1/count_reg[0] |                 |                                         |                1 |              8 |
+|  queue/my_btn2/count_reg[3] |                 |                                         |                1 |              8 |
+|  led_OBUF_BUFG[1]           |                 |                                         |                4 |             12 |
+|  led_OBUF_BUFG[1]           |                 | queue/my_btn2/divcounter[22]_i_1__0_n_0 |                5 |             14 |
+|  led_OBUF_BUFG[1]           |                 | queue/my_btn1/divcounter[22]_i_1_n_0    |                5 |             14 |
+| ~sl_clk/CLK                 |                 |                                         |                6 |             18 |
+|  sl_clk/CLK                 | semaforo/signal |                                         |                7 |             32 |
+|  led_OBUF_BUFG[1]           |                 | queue/my_btn2/divcounter[23]_i_1__0_n_0 |                7 |             34 |
+|  led_OBUF_BUFG[1]           |                 | queue/my_btn1/divcounter[23]_i_1_n_0    |                9 |             34 |
+|  clk_IBUF_BUFG              |                 |                                         |                6 |             42 |
+|  clk_IBUF_BUFG              | sw_IBUF         | sl_clk/divcounter[25]_i_1_n_0           |                7 |             50 |
+|  semaforo/Q[1]              |                 | cr_sn/divcounter[26]_i_1__0_n_0         |                8 |             54 |
+|  semaforo/Q[4]              |                 | cr_eo/divcounter[26]_i_1_n_0            |                8 |             54 |
++-----------------------------+-----------------+-----------------------------------------+------------------+----------------+
+
+

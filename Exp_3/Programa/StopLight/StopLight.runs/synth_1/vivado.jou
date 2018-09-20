@@ -1,12 +1,12 @@
 #-----------------------------------------------------------
-# Vivado v2018.2.1 (64-bit)
-# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
-# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Thu Sep 20 11:02:51 2018
-# Process ID: 1668
-# Current directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1
-# Command line: vivado.exe -log btn_queue.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source btn_queue.tcl
-# Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1/btn_queue.vds
-# Journal file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1\vivado.jou
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Sep 20 15:52:04 2018
+# Process ID: 11017
+# Current directory: /home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.runs/synth_1
+# Command line: vivado -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: /home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.runs/synth_1/main.vds
+# Journal file: /home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
-source btn_queue.tcl -notrace
+source main.tcl -notrace

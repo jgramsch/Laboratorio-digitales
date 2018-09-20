@@ -22,12 +22,15 @@
 
 module count_1(
     input wire clk_in,
-    output[255:0] count_out
+    input on_off,
+    output reg [7:0] count_out
     );
-    reg[255:0] count = 0;  //Variable Auxiliar que lleva la cuenta
     always @(posedge clk_in)
         begin
-        count <= (count == 255)? 0: count + 1;  // Siempre que clk_in este en el flanco de subida se sube la cuanta hasta 255, luego reinicia la cuenta
+        case(on_off)
+        1'b0: count_out = 8'b00000000;
+        1'b1: count_out = count_out + 1 ;
+        endcase
         end
-    assign count_out = count;  // Asigna el valor del contador a la variable de salida
+
 endmodule

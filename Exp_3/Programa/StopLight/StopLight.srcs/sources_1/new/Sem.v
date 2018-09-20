@@ -1,9 +1,10 @@
 module sem(
-  input count [8:0],
-  output signal [14:0]
+  input [8:0] count,
+  input clk,
+  output reg  [14:0] signal
 );
 
-always @(count) begin
+always @(posedge clk) begin
   case (count)
     9'b000000000: signal = 15'b001000000001001;
     9'b001000000: signal = 15'b001000100100001;

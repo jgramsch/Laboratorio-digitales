@@ -1,14 +1,13 @@
 module signal_mux(
-  input feed [23:0],
-  input selector [1:0],
-  output senal [7:0]
+  input [7:0] triang,
+  input [7:0] square,
+  input [7:0] sin,
+  input [1:0] selector ,
+  output reg [7:0] senal 
 );
 
-wire triang [7:0] = feed [23:16];
-wire square [7:0] = feed [16:8];
-wire sin [7:0] = feed [7:0];
 
-always @ (selector);
+always @ (*)
 begin
   case (selector)
     2'b00 : senal = triang;

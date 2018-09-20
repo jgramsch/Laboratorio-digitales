@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-2L" LaunchTime="1537452162">
-  <File Type="PA-TCL" Name="btn_queue.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="btn_queue_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="btn_queue_reports.tcl"/>
-  <File Type="RDS-RDS" Name="btn_queue.vds"/>
-  <File Type="RDS-UTIL" Name="btn_queue_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="btn_queue_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="btn_queue.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="btn_queue_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="btn_queue_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-2L" LaunchTime="1537469521">
+  <File Type="VDS-TIMING-PB" Name="main_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="main_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="main.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="main_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="main_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="main_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="main.vds"/>
+  <File Type="REPORTS-TCL" Name="main_reports.tcl"/>
+  <File Type="PA-TCL" Name="main.tcl"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
+    <File Path="$PSRCDIR/sources_1/new/clk_mgmt.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/queue_count.v">
+    <File Path="$PSRCDIR/sources_1/new/debouncer.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -32,17 +32,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/clk_mgmt.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/main.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -50,7 +41,34 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/Sem.v">
       <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/display_split.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/queue_count.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sevenseg.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/car_counter.v">
+      <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -58,7 +76,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="btn_queue"/>
+      <Option Name="TopModule" Val="main"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">

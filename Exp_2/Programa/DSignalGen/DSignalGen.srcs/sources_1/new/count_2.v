@@ -22,9 +22,9 @@
 
 module count_2(
     input wire clk_in,
-    output[3:0] count_out
+    output[1:0] count_out
     );
-    reg[3:0] count = 0;  // Variable auxiliar que lleva la cuenta
+    reg[1:0] count = 0;  // Variable auxiliar que lleva la cuenta
     always @(posedge clk_in)
         begin
         count <= (count == 2)? 0: count + 1; // Siempre que clk_in este en el flanco de subida se sube la cuanta hasta 2, luego reinicia la cuenta
