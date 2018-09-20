@@ -38,6 +38,7 @@ module main(
     wire clock;
     wire dsc1 = 0;
     wire dsc2 = 0;
+    wire high_flux = 0;
     wire[3:0] queue1;
     wire[3:0] queue2;
     
@@ -47,7 +48,8 @@ module main(
                     .in(btnR), 
                     .in(clk), 
                     .in(dsc1), 
-                    .in(dsc2), 
+                    .in(dsc2),
+                    .out(high_flux), 
                     .out(queue1), 
                     .out(queue2));
      
