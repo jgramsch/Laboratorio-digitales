@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../StopLight.srcs/sources_1/new/debouncer.v" \
+"../../../../StopLight.srcs/sources_1/new/queue_count.v" \
+"../../../../StopLight.srcs/sources_1/new/btn_queue.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
