@@ -22,6 +22,7 @@
 
 module clk_mgmt(
     input wire clk_in,
+    input enable,
     output wire clk_out
     );
     //-- Valor por defecto del divisor
@@ -39,7 +40,7 @@ module clk_mgmt(
     reg [N-1:0] divcounter = 0;
 
     //-- Contador m�dulo M
-    always @(posedge clk_in)
+    always @(posedge clk_in and enable)
       begin
       divcounter <= (divcounter == M - 1)? 0: divcounter + 1;
       end
