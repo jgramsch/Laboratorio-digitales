@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Thu Sep 20 16:42:37 2018
-# Process ID: 6584
+# Start of session at: Thu Sep 20 17:48:08 2018
+# Process ID: 9008
 # Current directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/impl_1
 # Command line: vivado.exe -log main.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source main.tcl -notrace
 # Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/impl_1/main.vdi

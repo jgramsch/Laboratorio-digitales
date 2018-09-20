@@ -2,8 +2,8 @@
 # Vivado v2018.2.1 (64-bit)
 # SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
 # IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
-# Start of session at: Thu Sep 20 16:40:53 2018
-# Process ID: 2696
+# Start of session at: Thu Sep 20 17:46:55 2018
+# Process ID: 9720
 # Current directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1
 # Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
 # Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1/main.vds
@@ -15,10 +15,10 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11312 
+INFO: Helper process launched with PID 14784 
 WARNING: [Synth 8-2611] redeclaration of ansi port number is not allowed [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v:30]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 378.156 ; gain = 111.586
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 377.844 ; gain = 111.207
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:25]
 INFO: [Synth 8-6157] synthesizing module 'car_counter' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/car_counter.v:23]
@@ -41,18 +41,15 @@ INFO: [Synth 8-6155] done synthesizing module 'queue_count' (4#1) [C:/Users/LENO
 INFO: [Synth 8-6155] done synthesizing module 'btn_queue' (5#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sem' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:1]
 INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:8]
+WARNING: [Synth 8-567] referenced signal 'count' should be on the sensitivity list [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:7]
 INFO: [Synth 8-6155] done synthesizing module 'sem' (6#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:1]
-INFO: [Synth 8-6157] synthesizing module 'display_split' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/display_split.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'display_split' (7#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/display_split.v:23]
 INFO: [Synth 8-6157] synthesizing module 'sevenseg' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (8#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v:23]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 1st driver pin 'main:/semaforo/signal[0]' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:66]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net count[0] with 2nd driver pin 'GND' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:66]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net count[0] is connected to constant driver, other driver is ignored [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:66]
-INFO: [Synth 8-6155] done synthesizing module 'main' (9#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:25]
-WARNING: [Synth 8-3917] design main has port led[3] driven by constant 0
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg' (7#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v:23]
+WARNING: [Synth 8-689] width (9) of port connection 'number' does not match port width (16) of module 'sevenseg' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:79]
+INFO: [Synth 8-6155] done synthesizing module 'main' (8#1) [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:25]
+WARNING: [Synth 8-3331] design sem has unconnected port clk
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 411.941 ; gain = 145.371
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.238 ; gain = 144.602
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -65,10 +62,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 411.941 ; gain = 145.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.238 ; gain = 144.602
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 411.941 ; gain = 145.371
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.238 ; gain = 144.602
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-2L
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -86,27 +83,28 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 754.926 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 754.207 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 754.926 ; gain = 488.355
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 754.207 ; gain = 487.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-2L
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 754.926 ; gain = 488.355
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 754.207 ; gain = 487.570
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:29 . Memory (MB): peak = 754.926 ; gain = 488.355
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 754.207 ; gain = 487.570
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/debouncer.v:54]
 INFO: [Synth 8-5546] ROM "signal" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'signal_reg' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 754.926 ; gain = 488.355
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 754.207 ; gain = 487.570
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,7 +125,7 @@ Detailed RTL Component Info :
 	               27 Bit    Registers := 2     
 	               25 Bit    Registers := 1     
 	               24 Bit    Registers := 2     
-	               15 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
 	                4 Bit    Registers := 2     
 	                1 Bit    Registers := 8     
 +---Muxes : 
@@ -138,6 +136,7 @@ Detailed RTL Component Info :
 	  85 Input     15 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 6     
 	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 2     
 	  85 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -147,6 +146,10 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module main 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
 Module car_counter 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -156,6 +159,7 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     27 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
 Module clk_mgmt 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -185,8 +189,6 @@ Detailed RTL Component Info :
 	   2 Input      4 Bit        Muxes := 3     
 Module sem 
 Detailed RTL Component Info : 
-+---Registers : 
-	               15 Bit    Registers := 1     
 +---Muxes : 
 	  85 Input     15 Bit        Muxes := 1     
 	  85 Input      1 Bit        Muxes := 1     
@@ -210,122 +212,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3917] design main has port led[3] driven by constant 0
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[7]' (FDE) to 'semaforo/signal_reg[9]'
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[9]' (FDE) to 'semaforo/signal_reg[8]'
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[10]' (FDE) to 'semaforo/signal_reg[8]'
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[11]' (FDE) to 'semaforo/signal_reg[8]'
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\semaforo/signal_reg[12] )
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[13]' (FDE) to 'semaforo/signal_reg[8]'
-INFO: [Synth 8-3886] merging instance 'semaforo/signal_reg[14]' (FDE) to 'semaforo/signal_reg[8]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\semaforo/signal_reg[8] )
-CRITICAL WARNING: [Synth 8-3352] multi-driven net high with 1st driver pin 'queue/high2_inferred/high2' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v:44]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net high with 2nd driver pin 'GND' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v:44]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net high is connected to constant driver, other driver is ignored [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v:44]
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[3]) is unused and will be removed from module main.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal[3] with 1st driver pin 'semaforo/signal_reg[3]/Q' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal[3] with 2nd driver pin 'GND' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal[3] is connected to constant driver, other driver is ignored [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[0]) is unused and will be removed from module main.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal[0] with 1st driver pin 'semaforo/signal_reg[0]/Q' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net signal[0] with 2nd driver pin 'GND' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net signal[0] is connected to constant driver, other driver is ignored [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v:9]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net estado_ambulancia with 1st driver pin 'estado_ambulancia_inferred/estado_ambulancia' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:51]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net estado_ambulancia with 2nd driver pin 'GND' [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:51]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net estado_ambulancia is connected to constant driver, other driver is ignored [C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v:51]
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:35 . Memory (MB): peak = 754.926 ; gain = 488.355
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 754.926 ; gain = 488.355
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 770.234 ; gain = 503.664
----------------------------------------------------------------------------------
-
-Report RTL Partitions: 
-+-+--------------+------------+----------+
-| |RTL Partition |Replication |Instances |
-+-+--------------+------------+----------+
-+-+--------------+------------+----------+
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[26]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[25]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[24]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[23]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[22]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[21]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[20]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[18]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[17]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/divcounter_reg[0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_eo/car_cross_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[26]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[25]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[24]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[23]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[22]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[21]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[20]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[18]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[17]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[16]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[15]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[14]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[13]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[12]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[11]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[10]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[9]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[8]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[7]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[6]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[5]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[4]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[3]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[2]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[1]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/divcounter_reg[0]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (cr_sn/car_cross_reg) is unused and will be removed from module main.
+INFO: [Synth 8-5546] ROM "semaforo/signal" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (semaforo/signal_reg[7]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/button_ff1_reg) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/button_ff2_reg) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/divcounter_reg[23]) is unused and will be removed from module main.
@@ -353,17 +241,42 @@ WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/divcounter_reg[2]) is 
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/divcounter_reg[1]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/divcounter_reg[0]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (queue/my_btn1/dbsign_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/button_ff1_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/button_ff2_reg) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[23]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[22]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[21]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[20]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[19]) is unused and will be removed from module main.
-WARNING: [Synth 8-3332] Sequential element (queue/my_btn2/divcounter_reg[18]) is unused and will be removed from module main.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (queue/my_count1/count_reg[3]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (queue/my_count1/count_reg[2]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (queue/my_count1/count_reg[1]) is unused and will be removed from module main.
+WARNING: [Synth 8-3332] Sequential element (queue/my_count1/count_reg[0]) is unused and will be removed from module main.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:48 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 754.207 ; gain = 487.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 754.207 ; gain = 487.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:37 . Memory (MB): peak = 765.523 ; gain = 498.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:38 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -387,7 +300,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished IO Insertion : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -400,7 +313,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -412,25 +325,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -447,50 +360,55 @@ Report Cell Usage:
 |      |Cell   |Count |
 +------+-------+------+
 |1     |BUFG   |     1|
-|2     |CARRY4 |    31|
-|3     |LUT1   |    10|
-|4     |LUT2   |    46|
-|5     |LUT3   |    16|
-|6     |LUT4   |    17|
-|7     |LUT5   |    20|
-|8     |LUT6   |    34|
-|9     |FDRE   |    53|
-|10    |IBUF   |     2|
-|11    |OBUF   |    22|
+|2     |CARRY4 |    41|
+|3     |LUT1   |     5|
+|4     |LUT2   |    62|
+|5     |LUT3   |    63|
+|6     |LUT4   |    30|
+|7     |LUT5   |    25|
+|8     |LUT6   |    65|
+|9     |FDRE   |   125|
+|10    |FDSE   |    16|
+|11    |LD     |    14|
+|12    |IBUF   |     4|
+|13    |OBUF   |    22|
 +------+-------+------+
 
 Report Instance Areas: 
-+------+---------------+--------------+------+
-|      |Instance       |Module        |Cells |
-+------+---------------+--------------+------+
-|1     |top            |              |   252|
-|2     |  display      |sevenseg      |   151|
-|3     |  queue        |btn_queue     |    29|
-|4     |    my_count1  |queue_count   |    18|
-|5     |    my_count2  |queue_count_0 |    11|
-|6     |  segment_join |display_split |     4|
-|7     |  sl_clk       |clk_mgmt      |    43|
-+------+---------------+--------------+------+
++------+--------------+--------------+------+
+|      |Instance      |Module        |Cells |
++------+--------------+--------------+------+
+|1     |top           |              |   473|
+|2     |  cr_eo       |car_counter   |    74|
+|3     |  cr_sn       |car_counter_0 |    74|
+|4     |  display     |sevenseg      |   100|
+|5     |  queue       |btn_queue     |   101|
+|6     |    my_btn2   |debouncer     |    92|
+|7     |    my_count2 |queue_count   |     8|
+|8     |  semaforo    |sem           |    45|
+|9     |  sl_clk      |clk_mgmt      |    43|
++------+--------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:30 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 12 critical warnings and 120 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 770.234 ; gain = 160.680
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:50 . Memory (MB): peak = 770.234 ; gain = 503.664
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 765.656 ; gain = 156.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 765.656 ; gain = 499.020
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 33 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 59 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 14 instances were transformed.
+  LD => LDCE: 14 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 103 Warnings, 15 Critical Warnings and 0 Errors encountered.
+32 Infos, 37 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:54 . Memory (MB): peak = 773.848 ; gain = 519.957
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:42 . Memory (MB): peak = 767.762 ; gain = 513.949
 WARNING: [Constraints 18-5210] No constraint will be written out.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 773.848 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu Sep 20 16:42:27 2018...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 767.762 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Sep 20 17:47:57 2018...

@@ -27,6 +27,8 @@ module btn_queue(
     input dsc2,
     input clk,
     output high,
+    output cars_in1,
+    output cars_in2,
     output[3:0] q_count1,
     output[3:0] q_count2
     );
@@ -42,6 +44,8 @@ module btn_queue(
     queue_count my_count2(b_count2, dsc2, qq_count2);
     
     assign high = (qq_count1 >= 6)? (qq_count2 >= 6)? 1:0 :(qq_count2 >= 6)? 1:0;
+    assign cars_in1 = (qq_count1 > 0)? 1:0;
+    assign cars_in2 = (qq_count2 > 0)? 1:0;
     assign q_count1 = qq_count1;
     assign q_count2 = qq_count2;
 

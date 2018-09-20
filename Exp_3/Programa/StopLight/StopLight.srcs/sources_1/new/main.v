@@ -44,38 +44,51 @@ module main(
     wire c_eo;
     wire[3:0] queue1;
     wire[3:0] queue2;
-    wire [8:0] contador = 0;
+    reg[8:0] contador;
     wire [14:0] salida_sem;
     wire [15:0] entrada_seg;
+    wire cross1;
+    wire cross2;
+    wire hay1;
+    wire hay2;
     
-    assign estado_ambulancia = btnC || salida_sem[8];
+    initial
+    begin
+    contador <= 0;
+    end
+    
+    assign estado_ambulancia = btnC || salida_sem[6];
     assign auto_amb = btnC || btnD;
-    assign c_sn = salida_sem[9];
-    assign c_eo = salida_sem[12];
-    assign led[2] = salida_sem[8];
+    assign c_sn = salida_sem[2];
+    assign c_eo = salida_sem[5];
+    assign led[2] = salida_sem[6];
     assign led[3] = flujo;
-    assign JA = salida_sem[14:9];
+    assign JA = salida_sem[5:0];
     assign led[0] = dsc1;
     assign led[1] = dsc2;
     assign led[4] = clock;
+    assign cross1 = c_sn && hay1;
+    assign cross2 = c_eo && hay2; 
     
-    car_counter cr_sn(c_sn,dsc1);
-    car_counter cr_eo(c_eo,dsc2);
+    car_counter cr_sn(c_sn, clk,dsc1);
+    car_counter cr_eo(c_eo, clk, dsc2);
     clk_mgmt sl_clk(clk,sw,clock);
-    btn_queue queue(auto_amb,btnR,clk,dsc1,dsc2,flujo,queue1,queue2);
-    sem semaforo(contador,clock,salida_sem);
-    display_split segment_join(queue1,queue2,entrada_seg);
-    sevenseg display(entrada_seg,clk,an,seg);
     
-//    always @(negedge clock)
-//    begin
-//    contador [6:0] = salida_sem[6:0];
-//    contador [7] = flujo;
-//    contador [8] = estado_ambulancia;
-//    end
-    assign contador [6:0] = salida_sem[6:0];
-    assign contador [7] = flujo;
-    assign contador [8] = estado_ambulancia;
+    btn_queue queue(auto_amb,btnR,clk,dsc1,dsc2,flujo, hay1, hay2,queue1,queue2);
+    
+    sem semaforo(contador,clock,salida_sem);
+//    display_split segment_join(queue1,queue2,entrada_seg);
+    sevenseg display(contador,clk,an,seg);
+    
+    always @(posedge clk)
+    begin
+    contador [8:2] <= salida_sem[14:8];
+    contador [1] <= flujo;
+    contador [0] <= estado_ambulancia; 
+    end
+//    assign contador [6:0] = salida_sem[6:0];
+//    assign contador [7] = flujo;
+//    assign contador [8] = estado_ambulancia;
     
     
 endmodule

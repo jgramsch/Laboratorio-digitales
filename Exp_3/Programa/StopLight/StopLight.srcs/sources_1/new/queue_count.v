@@ -21,14 +21,14 @@
 
 
 module queue_count(
-    input wire clk_in,
-    input wire discount,
+    input clk_in,
+    input discount,
     output[3:0] count_out
     );
     reg[3:0] count = 0;  // Variable auxiliar que lleva la cuenta
     always @(posedge clk_in)
         begin
-        count <= (discount)? (count == 0)? 0: count - 1: (count == 15)? 0: count + 1; // Si la señal discount se encuentra activa y es 0 se mantiene en 0, de no ser asi descuenta y en caso de no estar activa discount la cuenta incrementa
+        count <= (discount==1)? (count == 0)? 0: count - 1: (count == 15)? 0: count + 1; // Si la señal discount se encuentra activa y es 0 se mantiene en 0, de no ser asi descuenta y en caso de no estar activa discount la cuenta incrementa
         end
     assign count_out = count; // Asigna el valor del contador a la variable de salida
 endmodule
