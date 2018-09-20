@@ -69,13 +69,20 @@ set rc [catch {
   create_project -in_memory -part xc7a35tcpg236-2L
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {/home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.cache/wt} [current_project]
-  set_property parent.project_path {/home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.xpr} [current_project]
-  set_property ip_output_repo {{/home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.cache/ip}} [current_project]
+  set_property webtalk.parent_dir C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/wt [current_project]
+  set_property parent.project_path C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.xpr [current_project]
+  set_property ip_output_repo C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{/home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.runs/synth_1/main.dcp}}
-  read_xdc {{/home/jose/Documents/UC/Lab. digitales/repo/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc}}
+  add_files -quiet C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1/main.dcp
+  set_msg_config -source 4 -id {BD 41-1661} -limit 0
+  set_param project.isImplRun true
+  add_files C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/bd/design_1/design_1.bd
+  set_param project.isImplRun false
+  read_xdc C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc
+  set_param project.isImplRun true
   link_design -top main -part xc7a35tcpg236-2L
+  set_param project.isImplRun false
+  write_hwdef -force -file main.hwdef
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
@@ -156,6 +163,7 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   catch { write_mem_info -force main.mmi }
   write_bitstream -force main.bit 
+  catch { write_sysdef -hwdef main.hwdef -bitfile main.bit -meminfo main.mmi -file main.sysdef }
   catch {write_debug_probes -quiet -force main}
   catch {file copy -force main.ltx debug_nets.ltx}
   close_msg_db -file write_bitstream.pb

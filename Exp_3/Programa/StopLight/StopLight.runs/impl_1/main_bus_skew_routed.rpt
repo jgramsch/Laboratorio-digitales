@@ -1,12 +1,12 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Thu Sep 20 15:59:49 2018
-| Host         : Ceres running 64-bit Ubuntu 18.04.1 LTS
+| Tool Version : Vivado v.2018.2.1 (win64) Build 2288692 Thu Jul 26 18:24:02 MDT 2018
+| Date         : Thu Sep 20 16:45:40 2018
+| Host         : DESKTOP-VGS1O6M running 64-bit major release  (build 9200)
 | Command      : report_bus_skew -warn_on_violation -file main_bus_skew_routed.rpt -pb main_bus_skew_routed.pb -rpx main_bus_skew_routed.rpx
 | Design       : main
 | Device       : 7a35t-cpg236
-| Speed File   : -2L  PRODUCTION 1.22 2018-03-21
+| Speed File   : -2L  PRODUCTION 1.23 2018-06-13
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 Bus Skew Report

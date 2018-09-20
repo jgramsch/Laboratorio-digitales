@@ -44,7 +44,7 @@ module main(
     wire c_eo;
     wire[3:0] queue1;
     wire[3:0] queue2;
-    reg [8:0] contador = 0;
+    wire [8:0] contador = 0;
     wire [14:0] salida_sem;
     wire [15:0] entrada_seg;
     
@@ -67,12 +67,15 @@ module main(
     display_split segment_join(queue1,queue2,entrada_seg);
     sevenseg display(entrada_seg,clk,an,seg);
     
-    always @(negedge clock)
-    begin
-    contador [6:0] = salida_sem[6:0];
-    contador [7] = flujo;
-    contador [8] = estado_ambulancia;
-    end
+//    always @(negedge clock)
+//    begin
+//    contador [6:0] = salida_sem[6:0];
+//    contador [7] = flujo;
+//    contador [8] = estado_ambulancia;
+//    end
+    assign contador [6:0] = salida_sem[6:0];
+    assign contador [7] = flujo;
+    assign contador [8] = estado_ambulancia;
     
     
 endmodule

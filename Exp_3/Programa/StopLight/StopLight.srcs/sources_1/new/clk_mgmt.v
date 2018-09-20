@@ -28,7 +28,7 @@ module clk_mgmt(
     //-- Valor por defecto del divisor
     //-- Como en la iCEstick el reloj es de 50MHz, ponermos un valor de 50M
     //-- para obtener una frecuencia de salida de 2Hz
-    parameter M = 50_000_000;
+    parameter M = 25_000_000;
 
     //-- Numero de bits para almacenar el divisor
     //-- Se calculan con la funcion de verilog $clog2, que nos devuelve el
@@ -42,9 +42,9 @@ module clk_mgmt(
     //-- Contador m�dulo M
     always @(posedge clk_in )
       begin
-      divcounter <= (enable)? (divcounter == M - 1)? 0: divcounter + 1: divcounter;
+      divcounter <= (enable==1)? (divcounter == M)? 0: divcounter + 1: divcounter;
       end
 
     //-- Sacar el bit mas significativo por clk_out segun select la frecuencia mas baja se hace con select = 0 y la mas rapida con select = 3
-    assign clk_out = (divcounter == M - 2)? 1:(divcounter == M/2)? 1: 0;
+    assign clk_out = (divcounter >= M/2)? 1: 0;
 endmodule
