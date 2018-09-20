@@ -9,3 +9,4 @@
 # Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/impl_1/main.vdi
 # Journal file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
+source main.tcl -notrace
