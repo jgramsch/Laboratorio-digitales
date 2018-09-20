@@ -40,9 +40,9 @@ module clk_mgmt(
     reg [N-1:0] divcounter = 0;
 
     //-- Contador m�dulo M
-    always @(posedge clk_in and enable)
+    always @(posedge clk_in )
       begin
-      divcounter <= (divcounter == M - 1)? 0: divcounter + 1;
+      divcounter <= (enable)? (divcounter == M - 1)? 0: divcounter + 1: divcounter;
       end
 
     //-- Sacar el bit mas significativo por clk_out segun select la frecuencia mas baja se hace con select = 0 y la mas rapida con select = 3
