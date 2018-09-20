@@ -22,6 +22,7 @@
 
 module car_counter(
     input green_light,
+    input clk
     output car_out
     );
 
@@ -32,10 +33,10 @@ module car_counter(
     reg [N-1:0] divcounter = 0;
     reg car_cross;
 
-    always @(posedge green_light)
+    always @(posedge clk)
     begin
-        divcounter <= (divcounter == M)? 0: divcounter + 1;
-        car_cross <=  (divcounter >= tsh)? 0:1;
+        divcounter <= (green_light)? (divcounter == M)? 0: divcounter + 1: 0;
+        car_cross <=  (green_light)? (divcounter >= tsh)? 0:1:0;
     end
 
     assign car_out = car_cross;
