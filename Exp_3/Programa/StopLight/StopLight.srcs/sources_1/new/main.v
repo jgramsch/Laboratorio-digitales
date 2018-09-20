@@ -26,12 +26,12 @@
 
 
 module main(
-    input clk,
-    input btnC,
-    input btnL,
-    input btnR,
-    input sw,
-    ouput an,
-    ouput JA
+//    input clk,
+//    input btnC,
+//    input btnL,
+//    input btnR,
+//    input sw,
+//    output an,
+//    output JA
     );
 endmodule

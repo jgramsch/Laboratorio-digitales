@@ -27,15 +27,21 @@ module btn_queue(
     input dsc1,
     input dsc2,
     input clk,
-    output [3:0] q_count1,
-    output [3:0] q_count2
+    output[3:0] q_count1,
+    output[3:0] q_count2
     );
 
     wire b_count1, b_count2;
+    wire[3:0] qq_count1;
+    wire[3:0] qq_count2;
 
     debouncer my_btn1(btn1, clk, b_count1);
     debouncer my_btn2(btn2, clk, b_count2);
 
-    queue_count my_count1(b_count1, dsc1, q_count1);
-    queue_count my_count2(b_count2, dsc2, q_count2);
+    queue_count my_count1(b_count1, dsc1, qq_count1);
+    queue_count my_count2(b_count2, dsc2, qq_count2);
+    
+    assign q_count1 = qq_count1;
+    assign q_count2 = qq_count2;
+
 endmodule

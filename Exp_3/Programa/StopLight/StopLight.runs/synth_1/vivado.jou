@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Sep 20 11:02:51 2018
+# Process ID: 1668
+# Current directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1
+# Command line: vivado.exe -log btn_queue.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source btn_queue.tcl
+# Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1/btn_queue.vds
+# Journal file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source btn_queue.tcl -notrace
