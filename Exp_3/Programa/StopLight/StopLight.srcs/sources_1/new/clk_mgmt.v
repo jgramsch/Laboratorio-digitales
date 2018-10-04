@@ -28,7 +28,7 @@ module clk_mgmt(
     //-- Valor por defecto del divisor
     //-- Como en la iCEstick el reloj es de 50MHz, ponermos un valor de 50M
     //-- para obtener una frecuencia de salida de 2Hz
-    parameter M = 25_000_000;
+    parameter M = 50_000_000;
 
     //-- Numero de bits para almacenar el divisor
     //-- Se calculan con la funcion de verilog $clog2, que nos devuelve el

@@ -70,15 +70,15 @@ module main(
     assign cross1 = c_sn && hay1;
     assign cross2 = c_eo && hay2; 
     
-    car_counter cr_sn(c_sn, clk,dsc1);
-    car_counter cr_eo(c_eo, clk, dsc2);
+    car_counter cr_sn(cross1, clk,dsc1);
+    car_counter cr_eo(cross2, clk, dsc2);
     clk_mgmt sl_clk(clk,sw,clock);
     
     btn_queue queue(auto_amb,btnR,clk,dsc1,dsc2,flujo, hay1, hay2,queue1,queue2);
     
     sem semaforo(contador,clock,salida_sem);
-//    display_split segment_join(queue1,queue2,entrada_seg);
-    sevenseg display(contador,clk,an,seg);
+    display_split segment_join(queue1,queue2,entrada_seg);
+    sevenseg display(entrada_seg,clk,an,seg);
     
     always @(posedge clk)
     begin

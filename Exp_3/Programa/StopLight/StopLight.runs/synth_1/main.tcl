@@ -18,32 +18,31 @@ proc create_report { reportName command } {
   }
 }
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a35tcpg236-2L
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/wt [current_project]
-set_property parent.project_path C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/wt [current_project]
+set_property parent.project_path C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/ip [current_project]
+set_property ip_output_repo c:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/clk_mgmt.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/debouncer.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/display_split.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/queue_count.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v
-  C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/car_counter.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/clk_mgmt.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/debouncer.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/btn_queue.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/main.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/Sem.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/display_split.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/queue_count.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/sevenseg.v
+  C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/new/car_counter.v
 }
-add_files C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/bd/design_1/design_1.bd
-set_property used_in_implementation false [get_files -all C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
+add_files C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/bd/design_1/design_1.bd
+set_property used_in_implementation false [get_files -all C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -53,8 +52,8 @@ set_property used_in_implementation false [get_files -all C:/Users/LENOVO/Docume
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc
-set_property used_in_implementation false [get_files C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc]
+read_xdc C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc
+set_property used_in_implementation false [get_files C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.srcs/constrs_1/Bays3.xdc]
 
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]

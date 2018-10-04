@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1'
+HD_PWD='C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_3/Programa/StopLight/StopLight.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
