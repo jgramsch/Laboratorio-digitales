@@ -1,0 +1,83 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
+| Date         : Thu Oct 11 18:25:33 2018
+| Host         : Ceres running 64-bit Ubuntu 18.04.1 LTS
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    16 |
+| Unused register locations in slices containing registers |    82 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |           10 |
+|      8 |            1 |
+|     12 |            2 |
+|    16+ |            3 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             140 |           30 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              24 |            4 |
+| Yes          | No                    | No                     |              12 |            3 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              54 |            9 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+----------------------------+------------------------------+------------------+----------------+
+|       Clock Signal       |        Enable Signal       |       Set/Reset Signal       | Slice Load Count | Bel Load Count |
++--------------------------+----------------------------+------------------------------+------------------+----------------+
+|  req_mux2/E[1]           |                            |                              |                1 |              2 |
+|  req_mux2/E[0]           |                            |                              |                1 |              2 |
+|  clock/counter_reg[3]    | lights1//i__n_0            |                              |                1 |              2 |
+|  clock/counter_reg[3]    | lights1/led_up_i_2_n_0     | lights1/led_up_i_1_n_0       |                1 |              2 |
+|  clock/counter_reg[3]    | lights2//i__n_0            |                              |                1 |              2 |
+|  clock/counter_reg[3]    | lights2/led_up_i_2__0_n_0  | lights2/led_up_i_1__0_n_0    |                1 |              2 |
+|  lights1/check           |                            |                              |                1 |              2 |
+|  lights2/stop_signal_reg |                            |                              |                1 |              2 |
+|  req_mux1/E[0]           |                            |                              |                1 |              2 |
+|  req_mux1/E[1]           |                            |                              |                1 |              2 |
+|  clk_IBUF_BUFG           | membrana/C0/Col[3]_i_1_n_0 |                              |                1 |              8 |
+|  clk_IBUF_BUFG           |                            | membrana/C0/sclk[19]_i_1_n_0 |                3 |             12 |
+|  clk_IBUF_BUFG           |                            | req_mux1/counter_reg[0]_0[0] |                1 |             12 |
+|  clock/counter_reg[3]    |                            |                              |                5 |             28 |
+|  clk_IBUF_BUFG           | sw_IBUF[2]                 | clock/divcounter[25]_i_1_n_0 |                7 |             50 |
+|  clk_IBUF_BUFG           |                            |                              |               19 |            100 |
++--------------------------+----------------------------+------------------------------+------------------+----------------+
+
+
