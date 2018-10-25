@@ -42,6 +42,14 @@ module main(
     wire [15:0] numero;
     reg [15:0] bee = 500;
     reg [9:0] cee = 2;
+    
+    top C1(
+        .clk(clk),
+        .PS2Data(PS2Data),
+        .PS2Clk(PS2Clk),
+        .key_new_code()
+    );
+    
     debouncer btnc(btnC,clk,chl1);
     debouncer btnu(btnU,clk,chl2);
     debouncer btnd(btnD,clk,chl3);

@@ -60,6 +60,13 @@
   <FileSets Version="1" Minor="31">
     <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
       <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/PS2Receiver.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/debouncer.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../repo/Laboratorio-digitales/Exp_2/Programa/DSignalGen/DSignalGen.srcs/sources_1/new/debouncer.v"/>
@@ -69,10 +76,26 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/new/key_translate.v">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
       <File Path="$PSRCDIR/sources_1/imports/new/sevenseg.v">
         <FileInfo>
           <Attr Name="ImportPath" Val="$PPRDIR/../repo/Laboratorio-digitales/Exp_2/Programa/DSignalGen/DSignalGen.srcs/sources_1/new/sevenseg.v"/>
           <Attr Name="ImportTime" Val="1536703156"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Laboratorio-digitales/Exp_5/Henry/Basys-3-Keyboard/src/hdl/top.v">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../repo/Laboratorio-digitales/Exp_5/Henry/Basys-3-Keyboard/src/hdl/top.v"/>
+          <Attr Name="ImportTime" Val="1540481434"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -205,16 +228,6 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PSRCDIR/sources_1/imports/Laboratorio-digitales/Exp_5/Henry/Basys-3-Keyboard/src/hdl/top.v">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../repo/Laboratorio-digitales/Exp_5/Henry/Basys-3-Keyboard/src/hdl/top.v"/>
-          <Attr Name="ImportTime" Val="1540481434"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
       <File Path="$PSRCDIR/sources_1/imports/Laboratorio-digitales/Exp_5/Henry/Basys-3-Keyboard/src/hdl/debouncer.v">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
@@ -270,6 +283,14 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/SubModosVenta.v"/>
           <Attr Name="ImportTime" Val="1540353372"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/count_1.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
