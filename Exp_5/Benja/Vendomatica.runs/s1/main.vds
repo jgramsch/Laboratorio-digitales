@@ -1,13 +1,13 @@
 #-----------------------------------------------------------
 # Vivado v2018.2 (64-bit)
-# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
 # IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
-# Start of session at: Wed Oct 24 03:44:25 2018
-# Process ID: 13308
-# Current directory: C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.runs/s1
-# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
-# Log file: C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.runs/s1/main.vds
-# Journal file: C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.runs/s1\vivado.jou
+# Start of session at: Thu Oct 25 12:38:20 2018
+# Process ID: 30358
+# Current directory: /home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.runs/s1
+# Command line: vivado -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: /home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.runs/s1/main.vds
+# Journal file: /home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.runs/s1/vivado.jou
 #-----------------------------------------------------------
 source main.tcl -notrace
 Command: synth_design -top main -part xc7a35tcpg236-1
@@ -15,26 +15,26 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6256 
+INFO: Helper process launched with PID 30370 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 356.258 ; gain = 99.742
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1267.777 ; gain = 75.812 ; free physical = 314 ; free virtual = 1561
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'main' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/main.v:23]
-INFO: [Synth 8-6157] synthesizing module 'SubModosVenta' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/SubModosVenta.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'SubModosVenta' (1#1) [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/SubModosVenta.v:23]
-INFO: [Synth 8-6157] synthesizing module 'StockProductos' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'StockProductos' (2#1) [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:23]
-INFO: [Synth 8-6157] synthesizing module 'HayStock' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/HayStock.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'HayStock' (3#1) [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/HayStock.v:23]
-INFO: [Synth 8-6157] synthesizing module 'MemPrecios' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:23]
-WARNING: [Synth 8-151] case item 2'b10 is unreachable [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:47]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:47]
-WARNING: [Synth 8-151] case item 2'b10 is unreachable [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:64]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:64]
-INFO: [Synth 8-6155] done synthesizing module 'MemPrecios' (4#1) [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'main' (5#1) [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'main' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/main.v:23]
+INFO: [Synth 8-6157] synthesizing module 'SubModosVenta' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/SubModosVenta.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'SubModosVenta' (1#1) [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/SubModosVenta.v:23]
+INFO: [Synth 8-6157] synthesizing module 'StockProductos' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'StockProductos' (2#1) [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:23]
+INFO: [Synth 8-6157] synthesizing module 'HayStock' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/HayStock.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'HayStock' (3#1) [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/HayStock.v:23]
+INFO: [Synth 8-6157] synthesizing module 'MemPrecios' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:23]
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:47]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:47]
+WARNING: [Synth 8-151] case item 2'b10 is unreachable [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:64]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:64]
+INFO: [Synth 8-6155] done synthesizing module 'MemPrecios' (4#1) [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'main' (5#1) [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/main.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 411.426 ; gain = 154.910
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1312.402 ; gain = 120.438 ; free physical = 314 ; free virtual = 1574
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -47,53 +47,53 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.426 ; gain = 154.910
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1312.402 ; gain = 120.438 ; free physical = 315 ; free virtual = 1573
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 411.426 ; gain = 154.910
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1312.402 ; gain = 120.438 ; free physical = 315 ; free virtual = 1573
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/constrs_1/new/Basys3.xdc]
-Finished Parsing XDC File [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/constrs_1/new/Basys3.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
+Parsing XDC File [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/constrs_1/new/Basys3.xdc]
+Finished Parsing XDC File [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/constrs_1/new/Basys3.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/constrs_1/new/Basys3.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/main_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/main_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 731.047 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1624.730 ; gain = 0.000 ; free physical = 105 ; free virtual = 1337
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 731.047 ; gain = 474.531
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 178 ; free virtual = 1414
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 731.047 ; gain = 474.531
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 178 ; free virtual = 1415
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 731.047 ; gain = 474.531
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:37 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 179 ; free virtual = 1416
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/StockProductos.v:44]
 INFO: [Synth 8-5544] ROM "hay" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-327] inferring latch for variable 'valor_reg' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:48]
-WARNING: [Synth 8-327] inferring latch for variable 'e_reg' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:50]
-WARNING: [Synth 8-327] inferring latch for variable 'w_reg' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:49]
-WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.srcs/sources_1/new/MemPrecios.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'valor_reg' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:48]
+WARNING: [Synth 8-327] inferring latch for variable 'e_reg' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:50]
+WARNING: [Synth 8-327] inferring latch for variable 'w_reg' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'q_reg' [/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.srcs/sources_1/new/MemPrecios.v:48]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:20 . Memory (MB): peak = 731.047 ; gain = 474.531
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 171 ; free virtual = 1408
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -242,7 +242,7 @@ WARNING: [Synth 8-3332] Sequential element (MP/q_reg[2]) is unused and will be r
 WARNING: [Synth 8-3332] Sequential element (MP/q_reg[1]) is unused and will be removed from module main.
 WARNING: [Synth 8-3332] Sequential element (MP/q_reg[0]) is unused and will be removed from module main.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 731.047 ; gain = 474.531
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:38 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 159 ; free virtual = 1399
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -254,13 +254,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 735.910 ; gain = 479.395
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 156 ; free virtual = 1291
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 745.512 ; gain = 488.996
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 156 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -272,7 +272,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:32 ; elapsed = 00:00:40 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:52 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -296,7 +296,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -309,7 +309,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -321,25 +321,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -377,11 +377,11 @@ Report Instance Areas:
 |4     |  SP     |StockProductos |    17|
 +------+---------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.730 ; gain = 432.766 ; free physical = 155 ; free virtual = 1290
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 755.043 ; gain = 178.906
-Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:00:41 . Memory (MB): peak = 755.043 ; gain = 498.527
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1624.730 ; gain = 120.438 ; free physical = 209 ; free virtual = 1344
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:53 . Memory (MB): peak = 1624.738 ; gain = 432.766 ; free physical = 209 ; free virtual = 1344
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 5 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -393,9 +393,9 @@ No Unisim elements were transformed.
 INFO: [Common 17-83] Releasing license: Synthesis
 41 Infos, 63 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:44 . Memory (MB): peak = 758.008 ; gain = 514.508
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:54 . Memory (MB): peak = 1624.738 ; gain = 432.961 ; free physical = 209 ; free virtual = 1344
 WARNING: [Constraints 18-5210] No constraint will be written out.
-INFO: [Common 17-1381] The checkpoint 'C:/Users/benja/Desktop/Lab2Digitales/Laboratorio-digitales/Exp_5/Vendomatica/Vendomatica.runs/s1/main.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/jose/Documents/UC/Lab. digitales/repo/Laboratorio-digitales/Exp_5/Benja/Vendomatica.runs/s1/main.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file main_utilization_synth.rpt -pb main_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 758.008 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Oct 24 03:45:14 2018...
+report_utilization: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.44 . Memory (MB): peak = 1648.742 ; gain = 0.000 ; free physical = 206 ; free virtual = 1345
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 25 12:39:39 2018...
