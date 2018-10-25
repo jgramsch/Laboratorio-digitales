@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.2 (lin64) Build 2258646 Thu Jun 14 20:02:38 MDT 2018
-| Date         : Thu Oct 25 11:51:22 2018
+| Date         : Thu Oct 25 16:09:05 2018
 | Host         : Ceres running 64-bit Ubuntu 18.04.1 LTS
 | Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
 | Design       : main
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |    24 |
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    28 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,7 +35,7 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |     14 |            3 |
-|    16+ |            4 |
+|    16+ |            5 |
 +--------+--------------+
 
 
@@ -45,9 +45,9 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              64 |           12 |
+| No           | No                    | No                     |              84 |           20 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |             144 |           33 |
+| No           | Yes                   | No                     |             144 |           38 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
@@ -62,11 +62,12 @@ Table of Contents
 +----------------+---------------+--------------------------------+------------------+----------------+
 |  clk_IBUF_BUFG |               | btnc/p_1_in[15]                |                5 |             14 |
 |  clk_IBUF_BUFG |               | btnd/divcounter[22]_i_1__1_n_0 |                5 |             14 |
-|  clk_IBUF_BUFG |               | btnu/divcounter[22]_i_1_n_0    |                5 |             14 |
-|  clk_IBUF_BUFG |               | btnd/divcounter[23]_i_1_n_0    |                4 |             34 |
-|  clk_IBUF_BUFG |               | btnu/divcounter[23]_i_1__0_n_0 |                7 |             34 |
-|  clk_IBUF_BUFG |               | btnc/divcounter[23]_i_1__1_n_0 |                7 |             34 |
-|  clk_IBUF_BUFG |               |                                |               12 |             64 |
+|  clk_IBUF_BUFG |               | btnu/divcounter[22]_i_1__0_n_0 |                5 |             14 |
+|  btnu/CLK      |               |                                |                6 |             20 |
+|  clk_IBUF_BUFG |               | btnc/p_1_in[16]                |                6 |             34 |
+|  clk_IBUF_BUFG |               | btnd/divcounter[23]_i_1__1_n_0 |                8 |             34 |
+|  clk_IBUF_BUFG |               | btnu/divcounter[23]_i_1__0_n_0 |                9 |             34 |
+|  clk_IBUF_BUFG |               |                                |               14 |             64 |
 +----------------+---------------+--------------------------------+------------------+----------------+
 
 

@@ -42,14 +42,6 @@ module main(
     wire [15:0] numero;
     reg [15:0] bee = 500;
     reg [9:0] cee = 2;
-    
-    top C1(
-        .clk(clk),
-        .PS2Data(PS2Data),
-        .PS2Clk(PS2Clk),
-        .key_new_code()
-    );
-    
     debouncer btnc(btnC,clk,chl1);
     debouncer btnu(btnU,clk,chl2);
     debouncer btnd(btnD,clk,chl3);
@@ -59,5 +51,5 @@ module main(
     assign led[3] = tot_num[15];
     assign conf = sw_conf;
     sevenseg seg_driver(tot,clk,an,seg);
-
+    coin_stack lala(chl2,chl3,bee,chl1,cee,tot,tot_num);
 endmodule

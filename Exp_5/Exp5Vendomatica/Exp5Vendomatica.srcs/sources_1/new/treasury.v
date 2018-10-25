@@ -30,8 +30,13 @@ module treasury(
     input conf,
     input btn_devolver,
     input avanzar,
+    input [13:0] precio,
     output [15:0] display_pagado,
-    output [3:0] leds_monedas
+    output [3:0] leds_monedas,
+    output alcanza,
+    output vuelto,
+    output alcanza_led,
+    output vuelto_led
     );
     
     wire usr_a = add_10 & !conf;
@@ -62,21 +67,23 @@ module treasury(
     wire [15:0] num_d;
     wire sclk;
     wire enable;
-    
+    wire [15:0] diferencia;
     
     assign display_pagado = pagado;
     //coin stacks solo hay de máquina.
-    coin_stack s_10(add_10,sub_10,val_a,reset,cant_inicial,tot_d,num_d);
-    coin_stack s_50(add_50,sub_50,val_b,reset,cant_inicial,tot_c,num_c);
-    coin_stack s_100(add_100,sub_100,val_c,reset,cant_inicial,tot_b,num_b);
-    coin_stack s_500(add_500,sub_500,val_d,reset,cant_inicial,tot_a,num_a);
+    coin_stack s_10(add_10,sub_10,val_a,reset,cant_inicial,tot_a,num_a);
+    coin_stack s_50(add_50,sub_50,val_b,reset,cant_inicial,tot_b,num_b);
+    coin_stack s_100(add_100,sub_100,val_c,reset,cant_inicial,tot_c,num_c);
+    coin_stack s_500(add_500,sub_500,val_d,reset,cant_inicial,tot_d,num_d);
 
     //guarda el total del usuario solo si config es cero
     user_total usuario(usr_a,usr_b,usr_c,usr_d,pagado);
     
     //dar vuelto con tiempos y volas xd
     clk_mgmt slow(clk,enable,sclk);
-    dar_vuelto show_de_vuelto();
+    dar_vuelto show_de_vuelto(sclk,avanzar,n_a,n_b,n_c,n_d,enable,sub_10,sub_50,sub_100,sub_500,leds_monedas);
     
     
+    //calculadora de vueltos
+    vuelto vuelto_calc(clk,precio,pagado,tot_a,tot_b,tot_c,tot_d,n_a,n_b,n_c,n_d,alcanza,alcanza_led,vuelto,vuelto_led,diferencia); 
 endmodule

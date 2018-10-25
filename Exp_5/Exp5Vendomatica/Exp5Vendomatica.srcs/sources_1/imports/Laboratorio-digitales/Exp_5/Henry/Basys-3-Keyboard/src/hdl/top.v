@@ -24,12 +24,16 @@ module top(
     input              clk,
     input              PS2Data,
     input              PS2Clk,
-    output reg         key_new_code
+    input  wire [15:0] sw, 
+    output wire [15:0] led
 );
 
     reg         CLK50MHZ=0;
+    wire        reset=0; 
+    wire [15:0] boletas;  // Cuenta de boletas
     wire [15:0] keycode;  // Codigo de tecla presionada (16bits)
     wire        flag;
+    wire        key_new_code;  // Código de tecla para máquina (4bits)
     
     
     always @(posedge(clk))begin
@@ -48,6 +52,23 @@ module top(
         .keycode(keycode),
 //        .rescode(led)
         .rescode(key_new_code)
+    );
+    
+    config_machine M2(
+        .sw(sw),
+        .clk(clk),
+        .keycode(key_new_code),
+        .boletas(boletas),
+        .id(),
+        .add_coin(),
+        .add_prod(),
+        .em_boletas(boletas)
+    );
+    
+    count_1 bol(
+        .clk_in(),
+        .reset(reset),
+        .count_out(boletas)
     );
                     
 //    assign led = keycode;
