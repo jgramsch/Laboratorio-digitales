@@ -1,0 +1,136 @@
+/*
+
+Xilinx Vivado v2018.2.1 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2288692 on Thu Jul 26 18:24:02 MDT 2018
+IP Build: 2289599 on Thu Jul 26 21:09:20 MDT 2018
+
+Process ID: 772
+License: Customer
+
+Current time: 	Thu Oct 25 14:13:01 CLST 2018
+Time zone: 	Chile Time (America/Santiago)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1366x768
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 754 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre
+Java executable location: 	C:/Xilinx/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	LENOVO
+User home directory: C:/Users/LENOVO
+User working directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica
+User country: 	CL
+User language: 	es
+User locale: 	es_CL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.2
+RDI_DATADIR: C:/Xilinx/Vivado/2018.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/LENOVO/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/LENOVO/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/LENOVO/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/vivado.log
+Vivado journal file location: 	C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/vivado.jou
+Engine tmp dir: 	C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/.Xil/Vivado-772-DESKTOP-VGS1O6M
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.2
+XILINX_SDK: C:/Xilinx/SDK/2018.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.2
+
+
+GUI allocated memory:	119 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 476 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// [GUI Memory]: 40 MB (+39446kb) [00:00:32]
+// [Engine Memory]: 403 MB (+271542kb) [00:00:32]
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\LENOVO\Documents\GitHub\IEE2783\experiencias\Laboratorio-digitales\Exp_5\Exp5Vendomatica\Exp5Vendomatica.xpr. Version: Vivado v2018.2 
+// [GUI Memory]: 53 MB (+11403kb) [00:00:53]
+// [Engine Memory]: 476 MB (+55012kb) [00:00:53]
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/Exp5Vendomatica.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica' 
+// HMemoryUtils.trashcanNow. Engine heap size: 476 MB. GUI used memory: 33 MB. Current time: 10/25/18 2:13:03 PM CLST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/Exp5Vendomatica.xpr 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica' INFO: [Project 1-313] Project file moved from '/home/jose/Documents/UC/Lab. digitales/Exp5Vendomatica' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.2/data/ip'. 
+// [Engine Memory]: 501 MB (+1338kb) [00:01:08]
+// TclEventType: PROJECT_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 511 MB. GUI used memory: 33 MB. Current time: 10/25/18 2:13:18 PM CLST
+// [Engine Memory]: 554 MB (+29132kb) [00:01:14]
+// Project name: Exp5Vendomatica; location: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica; part: xc7a35tcpg236-2L
+// [Engine Memory]: 591 MB (+9939kb) [00:01:22]
+// Tcl Message: open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 728.980 ; gain = 88.008 
+dismissDialog("Open Project"); // bx (ck)
+// [GUI Memory]: 56 MB (+434kb) [00:01:23]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 61 MB (+2521kb) [00:01:30]
+// [GUI Memory]: 65 MB (+537kb) [00:01:34]
+// Elapsed time: 23 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 3); // B (D, ck)
+// PAPropertyPanels.initPanels (uart_tx.v) elapsed time: 1s
+// Elapsed time: 25 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, uart_tx (uart_tx.v)]", 20, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), C1 : xil_defaultlib.key_translate]", 5, false); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uut : PS2Receiver (PS2Receiver.v)]", 4); // B (D, ck)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uut : PS2Receiver (PS2Receiver.v)]", 4); // B (D, ck)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), uut : PS2Receiver (PS2Receiver.v)]", 4); // B (D, ck)
+floatView(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, ck)
+// PAResourceOtoP.PAViews_SOURCES: Sources: float view
+// HMemoryUtils.trashcanNow. Engine heap size: 609 MB. GUI used memory: 40 MB. Current time: 10/25/18 2:14:38 PM CLST
+// Elapsed time: 18 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 21, true); // u (O, ck) - Node
+// [GUI Memory]: 74 MB (+5860kb) [00:02:44]
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl Command: 'rdi::info_commands get_hw_probes'
+// Tcl Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// bx (ck):  Open Hardware Manager : addNotify
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw 
+dockFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aw (aE, aG)
+dismissDialog("Open Hardware Manager"); // bx (ck)
+// [GUI Memory]: 79 MB (+2110kb) [00:02:54]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (ay, ck)
+closeTask("Program and Debug", "Hardware Manager", "DesignTask.PROGRAM_DEBUG");
+// TclEventType: HW_SESSION_CLOSE
+// Tcl Message: close_hw 
+// bx (ck):  CLose Hardware Manager : addNotify
+dismissDialog("CLose Hardware Manager"); // bx (ck)

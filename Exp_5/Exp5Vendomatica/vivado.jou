@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2018.2.1 (64-bit)
+# SW Build 2288692 on Thu Jul 26 18:24:02 MDT 2018
+# IP Build 2289599 on Thu Jul 26 21:09:20 MDT 2018
+# Start of session at: Thu Oct 25 14:10:53 2018
+# Process ID: 772
+# Current directory: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8652 C:\Users\LENOVO\Documents\GitHub\IEE2783\experiencias\Laboratorio-digitales\Exp_5\Exp5Vendomatica\Exp5Vendomatica.xpr
+# Log file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/vivado.log
+# Journal file: C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/LENOVO/Documents/GitHub/IEE2783/experiencias/Laboratorio-digitales/Exp_5/Exp5Vendomatica/Exp5Vendomatica.xpr
+update_compile_order -fileset sources_1
+open_hw
+close_hw
